@@ -1,1008 +1,523 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Manjunath M V | Analog IC & VLSI Portfolio</title>
-
+<title>Manjunath M V | Electronics Engineer — Embedded, Analog & VLSI</title>
+<meta name="description" content="Manjunath M V — Electronics & Communication Engineering student at DSCE Bengaluru. Embedded systems (ESP32, Arduino), analog & digital circuits, Cadence Virtuoso, Verilog and hardware debugging.">
+<meta name="theme-color" content="#020816">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 </head>
-
 <body>
 
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="progress" id="progress"></div>
+
 <!-- NAVBAR -->
-
-<nav class="navbar">
-
-    <div class="logo">MMV</div>
-
-    <ul class="nav-links">
-
-        <li><a href="#">HOME</a></li>
-
-        <li><a href="#about">ABOUT</a></li>
-
-        <li><a href="#skills">SKILLS</a></li>
-
-        <li><a href="#projects">PROJECTS</a></li>
-
-        <li><a href="#certifications">CERTIFICATIONS</a></li>
-
-        <li><a href="#experience">JOURNEY</a></li>
-
-        <li><a href="#contact">CONTACT</a></li>
-
-    </ul>
-
-    <a href="Manjunath_MV_Resume.pdf"
-   download
-   class="resume-btn">
-
-   RESUME <i class="fa-solid fa-download"></i>
-
-</a>
-
+<nav class="navbar" id="navbar">
+  <a href="#home" class="logo"><span>&lt;</span>MMV<span>/&gt;</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#domains">Domains</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#experience">Journey</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="Manjunath_MV_Resume.pdf" download class="resume-btn">Resume <i class="fa-solid fa-download"></i></a>
+  <button class="burger" id="burger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
 </nav>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-visual" aria-hidden="true">
+    <img src="engineer.png" alt="">
+    <span class="chip c1">ESP32</span>
+    <span class="chip c2">I²C</span>
+    <span class="chip c3">VDD</span>
+    <span class="chip c4">GPIO</span>
+    <span class="chip c5">ADC</span>
+  </div>
 
-<section class="hero">
+  <div class="hero-content">
+    <div class="eyebrow reveal"><span class="dot"></span> Open to internships &amp; hardware / embedded roles</div>
 
-    <div class="hero-overlay"></div>
+    <h1 class="reveal">MANJUNATH <span class="grad">M V</span></h1>
 
-    <div class="hero-content">
-
-        <div class="hero-left">
-
-            <h1>MANJUNATH M V</h1>
-
-            <h2>
-                ANALOG IC DESIGN • LAYOUT DESIGN • VLSI DESIGN
-            </h2>
-
-            <div class="line"></div>
-
-            <p>
-                Building Efficient Circuits.
-                <span>Designing Future Silicon.</span>
-            </p>
-
-            <!-- HERO SKILLS -->
-
-            <div class="skills-row">
-
-                <div class="skill-card">
-
-                    <i class="fa-solid fa-microchip"></i>
-
-                    <h3>ANALOG DESIGN</h3>
-
-                    <p>
-                        CMOS Circuits<br>
-                        Operational Amplifiers
-                    </p>
-
-                </div>
-
-                <div class="skill-card">
-
-                    <i class="fa-solid fa-layer-group"></i>
-
-                    <h3>LAYOUT DESIGN</h3>
-
-                    <p>
-                        Cadence Virtuoso<br>
-                        180nm & 90nm
-                    </p>
-
-                </div>
-
-                <div class="skill-card">
-
-                    <i class="fa-solid fa-code"></i>
-
-                    <h3>DIGITAL DESIGN</h3>
-
-                    <p>
-                        Verilog<br>
-                        SVV VHDL
-                    </p>
-
-                </div>
-
-                <div class="skill-card">
-
-                    <i class="fa-solid fa-wave-square"></i>
-
-                    <h3>SIMULATION</h3>
-
-                    <p>
-                        LTspice<br>
-                        ModelSim
-                    </p>
-
-                </div>
-
-            </div>
-
-            <!-- STATS -->
-
-            <div class="stats-container">
-
-                <div class="stat-card">
-                    <h3>8.14</h3>
-                    <p>CGPA</p>
-                </div>
-
-                <div class="stat-card">
-                    <h3>5+</h3>
-                    <p>Projects</p>
-                </div>
-
-                <div class="stat-card">
-                    <h3>4+</h3>
-                    <p>Certificates</p>
-                </div>
-
-                <div class="stat-card">
-                    <h3>2027</h3>
-                    <p>Graduation</p>
-                </div>
-
-            </div>
-
-            <!-- ACTIONS -->
-
-            <div class="hero-actions">
-
-                <span>
-                    <i class="fa-regular fa-lightbulb"></i>
-                    INNOVATE
-                </span>
-
-                <span>
-                    <i class="fa-regular fa-pen-to-square"></i>
-                    DESIGN
-                </span>
-
-                <span>
-                    <i class="fa-solid fa-chart-line"></i>
-                    SIMULATE
-                </span>
-
-                <span>
-                    <i class="fa-solid fa-microchip"></i>
-                    FABRICATE
-                </span>
-
-            </div>
-
-        </div>
-
-        <div class="hero-right">
-
-            <div class="contact-box">
-
-                <p>
-                    <i class="fa-solid fa-envelope"></i>
-                    manjunathvannur21@gmail.com
-                </p>
-
-                <p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    Bengaluru, India
-                </p>
-
-                <p>
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    B.E ECE • Class of 2027
-                </p>
-
-            </div>
-
-        </div>
-
+    <div class="typed-row reveal">
+      <span class="prompt">&gt;</span>
+      <span id="typed"></span><span class="caret"></span>
     </div>
 
+    <p class="tagline reveal">From sensors to silicon — <em>I build electronics that work.</em></p>
+
+    <div class="hero-cta reveal">
+      <a href="#projects" class="btn primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="Manjunath_MV_Resume.pdf" download class="btn ghost"><i class="fa-solid fa-download"></i> Resume</a>
+      <a href="#contact" class="btn ghost">Contact</a>
+    </div>
+
+    <div class="hero-meta reveal">
+      <span><i class="fa-solid fa-location-dot"></i> Bengaluru, India</span>
+      <span><i class="fa-solid fa-graduation-cap"></i> B.E ECE • Class of 2027</span>
+      <a href="mailto:manjunathvannur21@gmail.com"><i class="fa-solid fa-envelope"></i> manjunathvannur21@gmail.com</a>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><h3 data-count="8.2" data-dec="1">0</h3><p>CGPA</p></div>
+      <div class="stat"><h3 data-count="8" data-suffix="">0</h3><p>Projects</p></div>
+      <div class="stat"><h3 data-count="9" data-suffix="+">0</h3><p>Certificates</p></div>
+      <div class="stat"><h3 data-count="2027" data-sep="no">0</h3><p>Graduation</p></div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-hint" aria-label="Scroll down"><i class="fa-solid fa-chevron-down"></i></a>
 </section>
 
-<!-- ABOUT + PROJECTS -->
+<!-- TOOLCHAIN STRIP -->
+<section class="strip">
+  <div class="strip-track">
+    <span>Embedded C</span><span>ESP32</span><span>Arduino</span><span>I²C</span><span>Sensor Interfacing</span><span>Cadence Virtuoso</span><span>LTspice</span><span>Verilog</span><span>ModelSim</span><span>MATLAB</span><span>COMSOL</span><span>Oscilloscope</span><span>Python</span>
+    <span>Embedded C</span><span>ESP32</span><span>Arduino</span><span>I²C</span><span>Sensor Interfacing</span><span>Cadence Virtuoso</span><span>LTspice</span><span>Verilog</span><span>ModelSim</span><span>MATLAB</span><span>COMSOL</span><span>Oscilloscope</span><span>Python</span>
+  </div>
+</section>
 
-<section class="portfolio-section">
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="sec-head reveal">
+    <span class="sec-num">01</span>
+    <h2>About Me</h2>
+  </div>
 
-    <!-- ABOUT -->
+  <div class="about-grid">
+    <div class="card about-text reveal">
+      <p>
+        I'm <strong>Manjunath M V</strong>, a final-year Electronics &amp; Communication Engineering student at
+        <strong>Dayananda Sagar College of Engineering, Bengaluru</strong>. I like building things that
+        <strong>sense, compute and respond</strong> — from ESP32 and Arduino firmware that talks to real sensors,
+        to CMOS circuits in Cadence, to Verilog testbenches that prove a design works.
+      </p>
+      <p>
+        My work spans the whole stack: Embedded C and real-time data acquisition, analog and digital circuit
+        design and testing, oscilloscope-and-multimeter debugging, and simulation in LTspice, Cadence Virtuoso,
+        ModelSim, MATLAB and COMSOL.
+      </p>
+      <p>
+        I'm open to internships and entry-level roles in embedded, hardware, test and process engineering — and to
+        collaborating on anything with a circuit board in it.
+      </p>
 
-    <div class="about-card" id="about">
-
-        <h2>ABOUT ME</h2>
-
-        <div class="section-line"></div>
-
-        <p>
-
-            I am Manjunath M V, an Electronics & Communication
-            Engineering student at Dayananda Sagar College of
-            Engineering, Bengaluru.
-
-            My interests lie in Analog IC Design, Layout Design,
-            Memory Design, Physical Design and Semiconductor
-            Technologies.
-
-            I have hands-on experience in Cadence Virtuoso
-            (180nm & 90nm), LTspice, COMSOL Multiphysics,
-            ModelSim and Verilog HDL for design, simulation
-            and verification of semiconductor systems.
-
-            My goal is to contribute to next-generation silicon
-            solutions as an Analog IC Design and Layout Design Engineer.
-            Passionate about semiconductor technology and silicon design, 
-            I am actively seeking opportunities to learn, contribute, 
-            and grow in Analog IC Design, Layout Design, and VLSI Engineering.
-                        
-            Open to internships, collaborative projects, and 
-            networking opportunities within the semiconductor industry.
-
-        </p>
-
-        <div class="about-details">
-
-            <p>🎓 B.E Electronics & Communication Engineering</p>
-
-            <p>🏫 Dayananda Sagar College of Engineering</p>
-
-            <p>📅 Graduation Year : 2027</p>
-
-            <p>📊 CGPA : 8.14</p>
-
-            <p>⚡ Analog IC Design & Layout Design Aspirant</p>
-
-            <div class="currently-learning">
-
-    <h3>Currently Learning</h3>
-
-    <div class="learning-tags">
-        <span>Analog Layout Design</span>
-        <span>CMOS Analog Circuits</span>
-        <span>Current Mirrors</span>
-        <span>Physical Design</span>
-        <span>Static Timing Analysis</span>
-        <span>Advanced SRAM Design</span>
+      <div class="facts">
+        <div><i class="fa-solid fa-graduation-cap"></i><span>B.E Electronics &amp; Communication</span></div>
+        <div><i class="fa-solid fa-building-columns"></i><span>Dayananda Sagar College of Engineering</span></div>
+        <div><i class="fa-regular fa-calendar"></i><span>Graduating 2027</span></div>
+        <div><i class="fa-solid fa-chart-simple"></i><span>CGPA 8.2 / 10</span></div>
+      </div>
     </div>
 
-</div>
+    <div class="card learning reveal">
+      <h3><i class="fa-solid fa-book-open-reader"></i> Currently Learning</h3>
+      <div class="learning-list">
+        <div class="learn"><span>Analog Layout Design</span><i></i></div>
+        <div class="learn"><span>CMOS Analog Circuits</span><i></i></div>
+        <div class="learn"><span>Current Mirrors</span><i></i></div>
+        <div class="learn"><span>Physical Design</span><i></i></div>
+        <div class="learn"><span>Static Timing Analysis</span><i></i></div>
+        <div class="learn"><span>Advanced SRAM Design</span><i></i></div>
+      </div>
+      <p class="mono-note">// always shipping, always learning</p>
+    </div>
+  </div>
 
-<div class="about-skills" id="skills">
+  <div class="highlights">
+    <div class="card hl reveal"><i class="fa-solid fa-trophy"></i><h4>Best Circuit Design</h4><p>Winner, "Circuit Minds" category — TechnoCognition Hackathon</p></div>
+    <div class="card hl reveal"><i class="fa-solid fa-file-lines"></i><h4>Research Publication</h4><p>Radiation-hardened 10T SRAM with enhanced stability and process variation tolerance</p></div>
+    <div class="card hl reveal"><i class="fa-solid fa-users-gear"></i><h4>Point Seven Club, DSCE</h4><p>Active technical member, Analog domain</p></div>
+    <div class="card hl reveal"><i class="fa-solid fa-screwdriver-wrench"></i><h4>SCL PDK Sessions</h4><p>Hands-on workshop on process design kits</p></div>
+  </div>
+</section>
 
-    <h3>Technical Skills</h3>
+<!-- DOMAINS -->
+<section class="section" id="domains">
+  <div class="sec-head reveal">
+    <span class="sec-num">02</span>
+    <h2>What I Work On</h2>
+  </div>
+  <p class="sec-sub reveal">Four areas of electronics I build in — each one backed by real projects below.</p>
 
-    <div class="about-skills-grid">
+  <div class="domains">
 
-        <div class="skill-pill">Cadence Virtuoso 180nm</div>
-        <div class="skill-pill">Cadence Virtuoso 90nm</div>
-
-        <div class="skill-pill">Analog IC Design</div>
-        <div class="skill-pill">Layout Design</div>
-
-        <div class="skill-pill">SRAM Design</div>
-        <div class="skill-pill">Verilog HDL</div>
-
-        <div class="skill-pill">ModelSim</div>
-        <div class="skill-pill">LTSpice</div>
-
-        <div class="skill-pill">COMSOL</div>
-        <div class="skill-pill">MATLAB</div>
-
-        <div class="skill-pill">Python</div>
-        <div class="skill-pill">C/C++</div>
-
-        <div class="skill-pill">Linux</div>
-        <div class="skill-pill">Arduino IDE</div>
-
-        <div class="skill-pill">VS Code</div>
-        <div class="skill-pill">ESP32</div>
-
+    <div class="card domain reveal">
+      <svg viewBox="0 0 200 60" class="viz" aria-hidden="true">
+        <path class="base" d="M0 30H40L48 30L54 12L60 50L66 22L72 30H110L118 30L124 10L130 52L136 24L142 30H200"/>
+        <path class="live" pathLength="100" d="M0 30H40L48 30L54 12L60 50L66 22L72 30H110L118 30L124 10L130 52L136 24L142 30H200"/>
+      </svg>
+      <h3>Embedded &amp; IoT</h3>
+      <p>ESP32 and Arduino firmware in Embedded C — I²C, GPIO, sensor integration and real-time data acquisition.</p>
+      <div class="tags"><span>MedShield</span><span>Rockfall Alert</span><span>Smart Cart</span></div>
     </div>
 
-</div>
-
-        </div>
-
+    <div class="card domain reveal">
+      <svg viewBox="0 0 200 60" class="viz" aria-hidden="true">
+        <path class="base" d="M0 30Q25 -12 50 30T100 30T150 30T200 30"/>
+        <path class="live" pathLength="100" d="M0 30Q25 -12 50 30T100 30T150 30T200 30"/>
+      </svg>
+      <h3>Analog Circuits</h3>
+      <p>CMOS design and simulation in Cadence Virtuoso and LTspice — op-amps, SRAM I/O and low-power techniques.</p>
+      <div class="tags"><span>Two-Stage Op-Amp</span><span>SRAM I/O</span><span>Low-Power SRAM</span></div>
     </div>
 
-    <!-- PROJECTS -->
-
-    <div class="projects-area" id="projects">
-
-        <div class="project-top">
-
-            <h2>FEATURED PROJECTS</h2>
-
-        </div>
-
-        <div class="section-line"></div>
-
-        <div class="project-cards">
-
-            <!-- PROJECT 1 -->
-
-            <div class="project-card">
-
-                <img src="project1.png">
-
-                <div class="project-content">
-
-                    <h3>
-                        Low Power SRAM Design Using DFF Architecture
-                    </h3>
-
-                    <span>Memory Design Project</span>
-
-                    <p>
-
-                        Designed low-power SRAM architecture using
-                        D Flip-Flop based memory cells. Analyzed
-                        power consumption, delay and stability.
-
-                    </p>
-
-                    <div class="tags">
-
-                        <span>SRAM</span>
-
-                        <span>Verilog</span>
-
-                        <span>Memory Design</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- PROJECT 2 -->
-
-            <div class="project-card">
-
-                <img src="project2.png">
-
-                <div class="project-content">
-
-                    <h3>
-                        SRAM I/O Circuit Design
-                    </h3>
-
-                    <span>Cadence Virtuoso Project</span>
-
-                    <p>
-
-                        Designed SRAM Input/Output circuits for
-                        reliable read/write operations and signal
-                        integrity analysis.
-
-                    </p>
-
-                    <div class="tags">
-
-                        <span>Cadence</span>
-
-                        <span>SRAM</span>
-
-                        <span>180nm</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- PROJECT 3 -->
-
-            <div class="project-card">
-
-                <img src="project3.png">
-
-                <div class="project-content">
-
-                    <h3>
-                        Two Stage Op-Amp
-                    </h3>
-
-                    <span>Analog IC Design</span>
-
-                    <p>
-
-                        Designed and simulated CMOS 2 stage OpAmp
-                        Amplifier using Cadence Virtuoso 90nm
-                        technology.
-
-                    </p>
-
-                    <div class="tags">
-
-                        <span>Cadence</span>
-
-                        <span>Analog</span>
-
-                        <span>180nm</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- PROJECT 4 -->
-
-            <div class="project-card">
-
-                <img src="project4.png">
-
-                <div class="project-content">
-
-                    <h3>
-                        Design of all optical plasmonic switch
-                    </h3>
-
-                    <span>COMSOL Multiphysics</span>
-
-                    <p>
-
-                        Performed electromagnetic field analysis
-                        of optical waveguide structures using
-                        COMSOL Multiphysics.
-
-                    </p>
-
-                    <div class="tags">
-
-                        <span>COMSOL</span>
-
-                        <span>Photonics</span>
-
-                        <span>Simulation</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- PROJECT 5 -->
-
-            <div class="project-card">
-
-                <img src="project5.png">
-
-                <div class="project-content">
-
-                    <h3>
-                        Smart Shopping Cart System
-                    </h3>
-
-                    <span>Embedded Systems</span>
-
-                    <p>
-
-                        Developed Smart Shopping Cart System
-                        system using Arduino Nano, RFID module
-                        and LCD interface.
-
-                    </p>
-
-                    <div class="tags">
-
-                        <span>Arduino</span>
-
-                        <span>RFID</span>
-
-                        <span>Embedded</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- PROJECT 6 -->
-
-            <div class="project-card">
-
-                <img src="project6.png">
-
-                <div class="project-content">
-
-                    <h3>
-                        MedShield AI
-                    </h3>
-
-                    <span>AI & Healthcare</span>
-
-                    <p>
-
-                        Developed an AI-assisted healthcare
-                        monitoring solution integrating ESP32,
-                        sensors and secure monitoring.
-
-                    </p>
-
-                    <div class="tags">
-
-                        <span>ESP32</span>
-
-                        <span>AI</span>
-
-                        <span>IoT</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
+    <div class="card domain reveal">
+      <svg viewBox="0 0 200 60" class="viz" aria-hidden="true">
+        <path class="base" d="M0 46H25V14H50V46H75V14H100V46H125V14H150V46H175V14H200"/>
+        <path class="live" pathLength="100" d="M0 46H25V14H50V46H75V14H100V46H125V14H150V46H175V14H200"/>
+      </svg>
+      <h3>Digital &amp; Verification</h3>
+      <p>Verilog and SystemVerilog, state machines and testbenches — including a BIST architecture with LFSR and MISR.</p>
+      <div class="tags"><span>BIST</span><span>Verilog</span><span>ModelSim</span></div>
     </div>
 
+    <div class="card domain reveal">
+      <svg viewBox="0 0 200 60" class="viz" aria-hidden="true">
+        <g class="bars">
+          <rect x="10"  y="8" width="12" height="46" rx="3"/><rect x="34"  y="8" width="12" height="46" rx="3"/>
+          <rect x="58"  y="8" width="12" height="46" rx="3"/><rect x="82"  y="8" width="12" height="46" rx="3"/>
+          <rect x="106" y="8" width="12" height="46" rx="3"/><rect x="130" y="8" width="12" height="46" rx="3"/>
+          <rect x="154" y="8" width="12" height="46" rx="3"/><rect x="178" y="8" width="12" height="46" rx="3"/>
+        </g>
+      </svg>
+      <h3>Test &amp; Debug</h3>
+      <p>Checklist-driven bring-up and troubleshooting with a multimeter and oscilloscope — reading voltage, current and signal behaviour.</p>
+      <div class="tags"><span>Oscilloscope</span><span>Multimeter</span><span>Board Bring-up</span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="sec-head reveal">
+    <span class="sec-num">03</span>
+    <h2>Technical Skills</h2>
+  </div>
+
+  <div class="skill-groups">
+    <div class="card skill-group reveal">
+      <div class="sg-icon"><i class="fa-solid fa-microchip"></i></div>
+      <h3>Embedded &amp; Firmware</h3>
+      <p class="sg-sub">Real hardware, real sensors</p>
+      <div class="pills">
+        <span>Embedded C</span><span>ESP32</span><span>Arduino Uno &amp; Nano</span><span>I²C</span><span>GPIO</span><span>Sensor Integration</span><span>Real-Time Data Acquisition</span>
+      </div>
+    </div>
+    <div class="card skill-group reveal">
+      <div class="sg-icon"><i class="fa-solid fa-wave-square"></i></div>
+      <h3>Analog &amp; Digital Electronics</h3>
+      <p class="sg-sub">Design, simulate, test</p>
+      <div class="pills">
+        <span>Analog Circuits</span><span>Digital Electronics</span><span>CMOS Circuit Design</span><span>State Machines</span><span>Circuit Simulation</span><span>SRAM Design</span>
+      </div>
+    </div>
+    <div class="card skill-group reveal">
+      <div class="sg-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+      <h3>Instrumentation &amp; Debug</h3>
+      <p class="sg-sub">Measure, verify, fix</p>
+      <div class="pills">
+        <span>Oscilloscope</span><span>Multimeter</span><span>Circuit Debugging</span><span>Board Bring-up</span><span>Basic Instrumentation</span>
+      </div>
+    </div>
+    <div class="card skill-group reveal">
+      <div class="sg-icon"><i class="fa-solid fa-code"></i></div>
+      <h3>Programming &amp; HDL</h3>
+      <p class="sg-sub">Firmware, scripting, RTL</p>
+      <div class="pills">
+        <span>C</span><span>C++</span><span>Verilog</span><span>SystemVerilog</span><span>Python (Basic)</span>
+      </div>
+    </div>
+    <div class="card skill-group reveal">
+      <div class="sg-icon"><i class="fa-solid fa-flask"></i></div>
+      <h3>EDA &amp; Tools</h3>
+      <p class="sg-sub">Simulation and workflow</p>
+      <div class="pills">
+        <span>Cadence Virtuoso (180nm / 90nm)</span><span>LTspice</span><span>ModelSim</span><span>MATLAB</span><span>COMSOL</span><span>Arduino IDE</span><span>Git / GitHub</span><span>VS Code</span><span>Linux</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="sec-head reveal">
+    <span class="sec-num">04</span>
+    <h2>Featured Projects</h2>
+  </div>
+
+  <div class="filters reveal" data-target="projectGrid">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="embedded">Embedded &amp; IoT</button>
+    <button data-filter="ic">Analog &amp; Memory</button>
+    <button data-filter="digital">Digital &amp; Verification</button>
+    <button data-filter="photonics">Photonics</button>
+  </div>
+
+  <div class="grid" id="projectGrid">
+
+    <article class="project card tilt reveal" data-cat="ic">
+      <div class="thumb"><img src="project1.png" alt="DFF optimized low-power SRAM" loading="lazy"><i class="fa-solid fa-memory fb"></i><span class="num">01</span><span class="badge"><i class="fa-solid fa-trophy"></i> Best Circuit Design</span></div>
+      <div class="body">
+        <span class="kicker">Hackathon • Team Project</span>
+        <h3>DFF-Optimized Low-Power SRAM for Satellite Systems</h3>
+        <p>Built and tested a low-power SRAM from D flip-flops with sleep-mode techniques, using structured LTspice testing to measure and reduce leakage power.</p>
+        <div class="tags"><span>SRAM</span><span>LTspice</span><span>Low Power</span></div>
+      </div>
+    </article>
+
+    <article class="project card tilt reveal" data-cat="ic">
+      <div class="thumb"><img src="project3.png" alt="Two stage CMOS op-amp" loading="lazy"><i class="fa-solid fa-microchip fb"></i><span class="num">02</span></div>
+      <div class="body">
+        <span class="kicker">Point Seven Club, DSCE</span>
+        <h3>Two-Stage CMOS Operational Amplifier</h3>
+        <p>Designed and tested a two-stage CMOS op-amp in Cadence Virtuoso (90nm). Measured ~60 dB DC gain and verified bandwidth, phase margin and stability.</p>
+        <div class="tags"><span>Cadence</span><span>Analog</span><span>90nm</span></div>
+      </div>
+    </article>
+
+    <article class="project card tilt reveal" data-cat="digital">
+      <div class="thumb"><img src="project8.png" alt="BIST architecture" loading="lazy"><i class="fa-solid fa-vial-circle-check fb"></i><span class="num">03</span><span class="badge live"><i class="fa-solid fa-circle"></i> Ongoing</span></div>
+      <div class="body">
+        <span class="kicker">VLSI Verification Project</span>
+        <h3>AI-Assisted BIST Architecture for a Telecommand Decoder</h3>
+        <p>Building a Built-In Self-Test architecture with an LFSR pattern generator and MISR response analyzer, verified with Verilog testbenches against a Telecommand Decoder.</p>
+        <div class="tags"><span>LFSR</span><span>MISR</span><span>Verilog</span></div>
+      </div>
+    </article>
+
+    <article class="project card tilt reveal" data-cat="embedded">
+      <div class="thumb"><img src="project6.png" alt="MedShield AI" loading="lazy"><i class="fa-solid fa-heart-pulse fb"></i><span class="num">04</span></div>
+      <div class="body">
+        <span class="kicker">Hackathon • AI &amp; Healthcare</span>
+        <h3>MedShield-AI</h3>
+        <p>Integrated an AD8232 ECG sensor with an ESP32 for real-time physiological data acquisition, feeding an AI-assisted system that flags irregular cardiac patterns.</p>
+        <div class="tags"><span>ESP32</span><span>ECG</span><span>AI</span></div>
+      </div>
+    </article>
+
+    <article class="project card tilt reveal" data-cat="embedded">
+      <div class="thumb"><img src="project7.png" alt="Rockfall prediction system" loading="lazy"><i class="fa-solid fa-mountain fb"></i><span class="num">05</span></div>
+      <div class="body">
+        <span class="kicker">Smart India Hackathon</span>
+        <h3>AI-Based Rockfall Prediction &amp; Alert System</h3>
+        <p>Engineered the sensor data-acquisition layer with microcontrollers and geotechnical sensors, feeding ML models that classify risk and trigger alerts on a dashboard.</p>
+        <div class="tags"><span>Sensors</span><span>Microcontroller</span><span>ML</span></div>
+      </div>
+    </article>
+
+    <article class="project card tilt reveal" data-cat="ic">
+      <div class="thumb"><img src="project2.png" alt="SRAM I/O circuit" loading="lazy"><i class="fa-solid fa-diagram-project fb"></i><span class="num">06</span></div>
+      <div class="body">
+        <span class="kicker">Cadence Virtuoso • Team Project</span>
+        <h3>SRAM I/O Circuit Design &amp; Verification</h3>
+        <p>Built and verified SRAM I/O circuitry in Cadence Virtuoso (180nm), running transient tests to confirm reliable read and write operation.</p>
+        <div class="tags"><span>Cadence</span><span>SRAM</span><span>180nm</span></div>
+      </div>
+    </article>
+
+    <article class="project card tilt reveal" data-cat="embedded">
+      <div class="thumb"><img src="project5.png" alt="Smart shopping cart" loading="lazy"><i class="fa-solid fa-cart-shopping fb"></i><span class="num">07</span></div>
+      <div class="body">
+        <span class="kicker">Academic Team Project</span>
+        <h3>Smart Shopping Cart System</h3>
+        <p>Built an IoT cart on Arduino Nano with an RFID reader, I²C LCD, LEDs and a push button. Embedded C firmware scans tags and updates the running total with LED feedback.</p>
+        <div class="tags"><span>Arduino</span><span>RFID</span><span>Embedded C</span></div>
+      </div>
+    </article>
+
+    <article class="project card tilt reveal" data-cat="photonics">
+      <div class="thumb"><img src="project4.png" alt="All optical plasmonic switch" loading="lazy"><i class="fa-solid fa-lightbulb fb"></i><span class="num">08</span></div>
+      <div class="body">
+        <span class="kicker">COMSOL Multiphysics</span>
+        <h3>All-Optical Plasmonic Switch Using GST</h3>
+        <p>Built and simulated an all-optical plasmonic switch with GST phase-change material, analysing optical transmission and switching performance.</p>
+        <div class="tags"><span>COMSOL</span><span>Photonics</span><span>Simulation</span></div>
+      </div>
+    </article>
+
+  </div>
 </section>
 
 <!-- CERTIFICATIONS -->
-
-<section class="certifications-section" id="certifications">
-
-    <h2>CERTIFICATIONS</h2>
-    <div class="section-line"></div>
-
-    <div class="project-cards">
-
-        <!-- Certificate 1 -->
-        <div class="project-card">
-
-            <img src="imagescert_rtl_gds.png" alt="RTL to GDS">
-
-            <div class="project-content">
-
-                <h3>RTL to GDS II Masterclass</h3>
-
-                <span>VLSI Design</span>
-
-                <p>
-                    Complete RTL-to-GDS design flow covering synthesis,
-                    floorplanning, placement and routing concepts.
-                </p>
-
-                <div class="tags">
-                    <span>RTL</span>
-                    <span>Physical Design</span>
-                    <span>VLSI</span>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Certificate 2 -->
-
-        <div class="project-card">
-
-            <img src="imagescert_nptel_analog.png" alt="NPTEL Analog">
-
-            <div class="project-content">
-
-                <h3>NPTEL Analog Circuits</h3>
-
-                <span>NPTEL Certification</span>
-
-                <p>
-                    Completed Analog Circuits course with a score of 61%.
-                </p>
-
-                <div class="tags">
-                    <span>Analog</span>
-                    <span>CMOS</span>
-                    <span>NPTEL</span>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Certificate 3 -->
-
-        <div class="project-card">
-
-            <img src="imagescert_vlsi_webinar.png">
-
-            <div class="project-content">
-
-                <h3>VLSI Made Easy Webinar</h3>
-
-                <span>Semiconductor Training</span>
-
-                <p>
-                    Industry-oriented VLSI concepts and career guidance.
-                </p>
-
-                <div class="tags">
-                    <span>VLSI</span>
-                    <span>Industry</span>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Certificate 4 -->
-
-        <div class="project-card">
-
-            <img src="imagescert_matlab_wireless.png">
-
-            <div class="project-content">
-
-                <h3>MATLAB Wireless Communication Onramp</h3>
-
-                <span>MathWorks</span>
-
-                <p>
-                    Wireless communication simulations using MATLAB.
-                </p>
-
-                <div class="tags">
-                    <span>MATLAB</span>
-                    <span>Wireless</span>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Certificate 5 -->
-
-        <div class="project-card">
-
-            <img src="imagescert_matlab_signal.png">
-
-            <div class="project-content">
-
-                <h3>MATLAB Signal Processing Onramp</h3>
-
-                <span>MathWorks</span>
-
-                <p>
-                    Signal analysis and processing fundamentals.
-                </p>
-
-                <div class="tags">
-                    <span>MATLAB</span>
-                    <span>DSP</span>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Certificate 6 -->
-
-        <div class="project-card">
-
-            <img src="imagescert_embedded_c.png">
-
-            <div class="project-content">
-
-                <h3>Embedded System Design Using C</h3>
-
-                <span>Embedded Systems</span>
-
-                <p>
-                    Embedded software development using C language.
-                </p>
-
-                <div class="tags">
-                    <span>C</span>
-                    <span>Embedded</span>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Certificate 7 -->
-
-        <div class="project-card">
-
-            <img src="imagescert_smart_home.png">
-
-            <div class="project-content">
-
-                <h3>Smart Home With Embedded Systems</h3>
-
-                <span>Project Workshop</span>
-
-                <p>
-                    Practical IoT and home automation project workshop.
-                </p>
-
-                <div class="tags">
-                    <span>IoT</span>
-                    <span>Embedded</span>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Certificate 8 -->
-
-        <div class="project-card">
-
-            <img src="imagescert_genai.png">
-
-            <div class="project-content">
-
-                <h3>Generative & Agentic AI</h3>
-
-                <span>Artificial Intelligence</span>
-
-                <p>
-                    AI workflows, LLMs and autonomous agents.
-                </p>
-
-                <div class="tags">
-                    <span>AI</span>
-                    <span>LLM</span>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Certificate 9 -->
-
-        <div class="project-card">
-
-            <img src="imagescert_ccn.png">
-
-            <div class="project-content">
-
-                <h3>Internet Society CCN</h3>
-
-                <span>Networking</span>
-
-                <p>
-                    Core concepts of internet communication and networking.
-                </p>
-
-                <div class="tags">
-                    <span>Network</span>
-                    <span>Internet</span>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Certificate 10 -->
-
-        <div class="project-card">
-
-            <img src="imagescert_hackathon_winner.png">
-
-            <div class="project-content">
-
-                <h3>Hackathon Winner</h3>
-
-                <span>Achievement</span>
-
-                <p>
-                    Winner in innovation-focused technical hackathon.
-                </p>
-
-                <div class="tags">
-                    <span>Winner</span>
-                    <span>Innovation</span>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Certificate 11 -->
-
-        <div class="project-card">
-
-            <img src="imagescert_mvj_hackathon.png">
-
-            <div class="project-content">
-
-                <h3>MVJ Project Expo</h3>
-
-                <span>Expo</span>
-
-                <p>
-                    Participated and presented innovative engineering solution.
-                </p>
-
-                <div class="tags">
-                    <span>Expo</span>
-                    <span>Project</span>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
+<section class="section" id="certifications">
+  <div class="sec-head reveal">
+    <span class="sec-num">05</span>
+    <h2>Certifications &amp; Achievements</h2>
+  </div>
+
+  <div class="filters reveal" data-target="certGrid">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="win">Achievements</button>
+    <button data-filter="vlsi">VLSI &amp; Analog</button>
+    <button data-filter="embedded">Embedded &amp; IoT</button>
+    <button data-filter="matlab">MATLAB</button>
+    <button data-filter="ai">AI &amp; Networking</button>
+  </div>
+
+  <div class="grid three" id="certGrid">
+
+    <article class="cert card tilt reveal win" data-cat="win">
+      <div class="thumb"><img src="imagescert_hackathon_winner.png" alt="Hackathon winner" loading="lazy"><i class="fa-solid fa-trophy fb"></i><span class="badge"><i class="fa-solid fa-trophy"></i> Winner</span></div>
+      <div class="body"><span class="kicker">TechnoCognition Hackathon</span><h3>Best Circuit Design — "Circuit Minds"</h3>
+        <p>Won Best Circuit Design for a DFF-optimized low-power SRAM for satellite systems.</p>
+        <div class="tags"><span>Winner</span><span>Circuit Design</span></div></div>
+    </article>
+
+    <article class="cert card tilt reveal win" data-cat="win">
+      <div class="thumb noimg"><i class="fa-solid fa-file-lines fb"></i><span class="badge"><i class="fa-solid fa-book"></i> Published</span></div>
+      <div class="body"><span class="kicker">Research Publication</span><h3>Robust Radiation-Hardened 10T SRAM</h3>
+        <p>"A Robust Radiation Hardened 10T SRAM with Enhanced Stability and Process Variation Tolerance."</p>
+        <div class="tags"><span>SRAM</span><span>Rad-Hard</span><span>Research</span></div></div>
+    </article>
+
+    <article class="cert card tilt reveal" data-cat="win">
+      <div class="thumb"><img src="imagescert_mvj_hackathon.png" alt="MVJ Project Expo" loading="lazy"><i class="fa-solid fa-lightbulb fb"></i></div>
+      <div class="body"><span class="kicker">Expo</span><h3>MVJ Project Expo</h3>
+        <p>Participated and presented an innovative engineering solution.</p>
+        <div class="tags"><span>Expo</span><span>Project</span></div></div>
+    </article>
+
+    <article class="cert card tilt reveal" data-cat="vlsi">
+      <div class="thumb"><img src="imagescert_nptel_analog.png" alt="NPTEL Analog" loading="lazy"><i class="fa-solid fa-wave-square fb"></i></div>
+      <div class="body"><span class="kicker">NPTEL Certification</span><h3>NPTEL Analog Circuits</h3>
+        <p>Completed the 8-week Analog Circuits course with a score of 61%.</p>
+        <div class="tags"><span>Analog</span><span>CMOS</span><span>NPTEL</span></div></div>
+    </article>
+
+    <article class="cert card tilt reveal" data-cat="vlsi">
+      <div class="thumb noimg"><i class="fa-solid fa-gears fb"></i></div>
+      <div class="body"><span class="kicker">Workshop</span><h3>SCL PDK Sessions</h3>
+        <p>Hands-on workshop on process design kits for semiconductor design.</p>
+        <div class="tags"><span>PDK</span><span>Semiconductor</span></div></div>
+    </article>
+
+    <article class="cert card tilt reveal" data-cat="vlsi">
+      <div class="thumb"><img src="imagescert_rtl_gds.png" alt="RTL to GDS" loading="lazy"><i class="fa-solid fa-microchip fb"></i></div>
+      <div class="body"><span class="kicker">VLSI Design</span><h3>RTL to GDS II Masterclass</h3>
+        <p>Complete RTL-to-GDS flow: synthesis, floorplanning, placement and routing concepts.</p>
+        <div class="tags"><span>RTL</span><span>Physical Design</span><span>VLSI</span></div></div>
+    </article>
+
+    <article class="cert card tilt reveal" data-cat="vlsi">
+      <div class="thumb"><img src="imagescert_vlsi_webinar.png" alt="VLSI webinar" loading="lazy"><i class="fa-solid fa-chalkboard-user fb"></i></div>
+      <div class="body"><span class="kicker">Semiconductor Training</span><h3>VLSI Made Easy Webinar</h3>
+        <p>Industry-oriented VLSI concepts and career guidance.</p>
+        <div class="tags"><span>VLSI</span><span>Industry</span></div></div>
+    </article>
+
+    <article class="cert card tilt reveal" data-cat="embedded">
+      <div class="thumb"><img src="imagescert_embedded_c.png" alt="Embedded C" loading="lazy"><i class="fa-solid fa-code fb"></i></div>
+      <div class="body"><span class="kicker">Embedded Systems</span><h3>Embedded System Design Using C</h3>
+        <p>Embedded software development using the C language.</p>
+        <div class="tags"><span>C</span><span>Embedded</span></div></div>
+    </article>
+
+    <article class="cert card tilt reveal" data-cat="embedded">
+      <div class="thumb"><img src="imagescert_smart_home.png" alt="Smart home" loading="lazy"><i class="fa-solid fa-house-signal fb"></i></div>
+      <div class="body"><span class="kicker">Project Workshop</span><h3>Smart Home With Embedded Systems</h3>
+        <p>Practical IoT and home automation project workshop.</p>
+        <div class="tags"><span>IoT</span><span>Embedded</span></div></div>
+    </article>
+
+    <article class="cert card tilt reveal" data-cat="matlab">
+      <div class="thumb"><img src="imagescert_matlab_wireless.png" alt="MATLAB wireless" loading="lazy"><i class="fa-solid fa-tower-cell fb"></i></div>
+      <div class="body"><span class="kicker">MathWorks</span><h3>MATLAB Wireless Communication Onramp</h3>
+        <p>Wireless communication simulations using MATLAB.</p>
+        <div class="tags"><span>MATLAB</span><span>Wireless</span></div></div>
+    </article>
+
+    <article class="cert card tilt reveal" data-cat="matlab">
+      <div class="thumb"><img src="imagescert_matlab_signal.png" alt="MATLAB signal processing" loading="lazy"><i class="fa-solid fa-chart-line fb"></i></div>
+      <div class="body"><span class="kicker">MathWorks</span><h3>MATLAB Signal Processing Onramp</h3>
+        <p>Signal analysis and processing fundamentals.</p>
+        <div class="tags"><span>MATLAB</span><span>DSP</span></div></div>
+    </article>
+
+    <article class="cert card tilt reveal" data-cat="ai">
+      <div class="thumb"><img src="imagescert_genai.png" alt="Generative and agentic AI" loading="lazy"><i class="fa-solid fa-robot fb"></i></div>
+      <div class="body"><span class="kicker">Artificial Intelligence</span><h3>Generative &amp; Agentic AI</h3>
+        <p>AI workflows, LLMs and autonomous agents.</p>
+        <div class="tags"><span>AI</span><span>LLM</span></div></div>
+    </article>
+
+    <article class="cert card tilt reveal" data-cat="ai">
+      <div class="thumb"><img src="imagescert_ccn.png" alt="Internet Society CCN" loading="lazy"><i class="fa-solid fa-network-wired fb"></i></div>
+      <div class="body"><span class="kicker">Networking</span><h3>Internet Society CCN</h3>
+        <p>Core concepts of internet communication and networking.</p>
+        <div class="tags"><span>Network</span><span>Internet</span></div></div>
+    </article>
+
+  </div>
 </section>
 
-<!-- EXPERIENCE -->
+<!-- JOURNEY -->
+<section class="section" id="experience">
+  <div class="sec-head reveal">
+    <span class="sec-num">06</span>
+    <h2>My Journey</h2>
+  </div>
 
-<section class="timeline-section" id="experience">
-
-    <h2>MY JOURNEY</h2>
-
-    <div class="section-line"></div>
-
-    <div class="timeline">
-
-        <div class="timeline-item">
-            <h3>2023</h3>
-            <p>Joined Dayananda Sagar College of Engineering, Bengaluru</p>
-        </div>
-
-        <div class="timeline-item">
-            <h3>2024</h3>
-            <p>Worked on Embedded Systems and IoT Projects</p>
-        </div>
-
-        <div class="timeline-item">
-            <h3>2025</h3>
-            <p>Designed Low Power SRAM Architecture</p>
-        </div>
-
-        <div class="timeline-item">
-            <h3>2026</h3>
-            <p>Completed RTL to GDS II Workshop</p>
-        </div>
-
-        <div class="timeline-item">
-            <h3>2026</h3>
-            <p>Designed SRAM I/O Circuitry using Cadence Virtuoso</p>
-        </div>
-
-        <div class="timeline-item">
-            <h3>2026</h3>
-            <p>Two Stage Operational Amplifier</p>
-        </div>
-
-        <div class="timeline-item">
-            <h3>2026</h3>
-            <p>Designed all optical plasmonic switch using COMSOL</p>
-        </div>
-
-        <div class="timeline-item">
-            <h3>2027</h3>
-            <p>B.E Graduation - Electronics & Communication Engineering</p>
-        </div>
-
-    </div>
-
+  <div class="timeline">
+    <div class="t-item reveal"><div class="t-card card"><h3>2023</h3><p>Joined Dayananda Sagar College of Engineering, Bengaluru</p></div></div>
+    <div class="t-item reveal"><div class="t-card card"><h3>Apr – Jun 2024</h3><p>Built the Smart Shopping Cart — Arduino Nano, RFID and Embedded C firmware</p></div></div>
+    <div class="t-item reveal"><div class="t-card card"><h3>Aug – Oct 2025</h3><p>Smart India Hackathon: sensor data-acquisition layer for an AI rockfall alert system</p></div></div>
+    <div class="t-item reveal"><div class="t-card card"><h3>Sep – Nov 2025</h3><p>Won Best Circuit Design with a DFF-optimized low-power SRAM for satellite systems</p></div></div>
+    <div class="t-item reveal"><div class="t-card card"><h3>Feb – Apr 2026</h3><p>Designed a two-stage CMOS op-amp (90nm) and simulated an all-optical plasmonic switch in COMSOL</p></div></div>
+    <div class="t-item reveal"><div class="t-card card"><h3>Mar – May 2026</h3><p>Built and verified SRAM I/O circuitry in Cadence Virtuoso (180nm)</p></div></div>
+    <div class="t-item reveal"><div class="t-card card"><h3>Apr – May 2026</h3><p>MedShield-AI: ESP32 + AD8232 ECG front-end with AI anomaly detection</p></div></div>
+    <div class="t-item reveal"><div class="t-card card"><h3>Aug 2026 – Now</h3><p>Engineering an AI-assisted BIST architecture (LFSR + MISR) for a Telecommand Decoder</p></div></div>
+    <div class="t-item reveal goal"><div class="t-card card"><h3>2027</h3><p>B.E Graduation — Electronics &amp; Communication Engineering</p></div></div>
+  </div>
 </section>
 
 <!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="sec-head reveal">
+    <span class="sec-num">07</span>
+    <h2>Connect With Me</h2>
+  </div>
+  <p class="sec-sub reveal">Looking for internships and entry-level roles in embedded, hardware, test and process engineering. Let's build something.</p>
 
-<section class="contact-section" id="contact">
-
-    <h2>CONNECT WITH ME</h2>
-
-    <div class="section-line"></div>
-
-    <div class="contact-container">
-
-        <div class="contact-card">
-
-            <i class="fa-solid fa-envelope"></i>
-
-            <h3>Email</h3>
-
-            <p>
-                manjunathvannur21@gmail.com
-            </p>
-
-        </div>
-
-        <div class="contact-card">
-
-            <i class="fa-brands fa-linkedin"></i>
-
-            <h3>LinkedIn</h3>
-
-            <a
-            href="https://www.linkedin.com/in/manjunath-m-v-8b8a123a9?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-            target="_blank">
-
-            View Profile
-
-            </a>
-
-        </div>
-
-        <div class="contact-card">
-
-            <i class="fa-brands fa-github"></i>
-
-            <h3>GitHub</h3>
-
-            <a
-            href="https://github.com/ManjunathMv21"
-            target="_blank">
-
-            View Projects
-
-            </a>
-
-        </div>
-
-    </div>
-
+  <div class="contact-grid">
+    <a class="card contact-card reveal" href="mailto:manjunathvannur21@gmail.com">
+      <i class="fa-solid fa-envelope"></i><h3>Email</h3><p>manjunathvannur21@gmail.com</p>
+    </a>
+    <a class="card contact-card reveal" target="_blank" rel="noopener" href="https://www.linkedin.com/in/manjunath-m-v-8b8a123a9">
+      <i class="fa-brands fa-linkedin"></i><h3>LinkedIn</h3><p>View Profile <i class="fa-solid fa-arrow-up-right-from-square sm"></i></p>
+    </a>
+    <a class="card contact-card reveal" target="_blank" rel="noopener" href="https://github.com/ManjunathMv21">
+      <i class="fa-brands fa-github"></i><h3>GitHub</h3><p>View Projects <i class="fa-solid fa-arrow-up-right-from-square sm"></i></p>
+    </a>
+  </div>
 </section>
 
 <!-- FOOTER -->
-
 <footer>
-
-    <h2>
-        Building Future Silicon Solutions
-    </h2>
-
-    <p>
-
-        Analog IC Design • Layout Design • VLSI Design
-
-    </p>
-
-    <div class="footer-links">
-
-        <a
-        href="https://github.com/ManjunathMv21"
-        target="_blank">
-
-        GitHub
-
-        </a>
-
-        <a
-        href="https://www.linkedin.com/in/manjunath-m-v-8b8a123a9?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-        target="_blank">
-
-        LinkedIn
-
-        </a>
-
-        <a
-        href="mailto:manjunathvannur21@gmail.com">
-
-        Email
-
-        </a>
-
-    </div>
-
-    <p>
-
-        © 2027 Manjunath M V
-
-    </p>
-
+  <h2>Engineering Ideas Into Working Hardware</h2>
+  <p>Embedded Systems • Analog &amp; Digital Circuits • VLSI</p>
+  <div class="footer-links">
+    <a href="https://github.com/ManjunathMv21" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/manjunath-m-v-8b8a123a9" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:manjunathvannur21@gmail.com">Email</a>
+  </div>
+  <p class="copy">© 2026 Manjunath M V</p>
 </footer>
 
-</body>
+<button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
+<script src="script.js"></script>
+</body>
 </html>
